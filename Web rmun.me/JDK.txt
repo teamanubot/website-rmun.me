@@ -1,0 +1,15 @@
+Install Java Development Kit (JDK)
+Java Development Kit atau JDK Adalah implementasi salah satu Platform Java, Edisi Standar, Platform Java, Edisi Enterprise, atau Platform Java, platform Micro Edition yang dirilis oleh Oracle Corporation dalam bentuk produk biner yang ditujukan untuk pengembang Java di Solaris, Linux , macOS atau Windows. Untuk mengecek apakah JDK sudah terinstal di komputermu, ketikkan perintah berikut :
+
+~ javac -version
+
+Kalo belum terinstal, ikuti langkah-langkah berikut untuk menginstal JDK:
+
+1. Unduh Java SE JDK (Standard Edition) dari website Oracle: http://www.oracle.com/technetwork/java/javase/downloads/index.html</a>.Klik tombol Java SE Downloads untuk menampilkan daftar unduhan. Klik radio Accept License Agreement lalu klik tautan Windows x86 bila komputermu 32bit dan Windows x64 bila komputermu 64bit.download file installer JDK
+2. Mulai instalasi JDK. Pastikan Kamu mengingat dimana folder JDK ini tersimpan karena akan kita daftarkan pada PATH di Windows.
+3. Setelah proses instalasi  selesai, update path dengan lokasi instalasi JDK agar JDK dapat dikenali di command line. Buka Control Panel, pilih System and Security, pilih System, pilih Advanced System Settings, akan muncul jendela System Properties. Pada tab Advanced klik tombol Environment Variables..
+4. Pada jendela Environment Variables bagian list user variables, pilih variable PATH lalu klik tombol Edit. Pada bagian akhir Variable value, tambahkan path folder tempat JDK disimpan, dalam kasus di komputer saya pathnya adalah ;C:\Program Files\Java\jdk1.8.0_20\bin. Kita pisahkan path value sebelumnya dengan path baru JDK kita dengan titik koma. Klik tombol OK pada jendela Edit.
+5. Selanjutnya buat variable dengan mengklik tombol New.., pada bagian Variable name isi dengan JAVA_HOME (kalo variabel ini sudah ada, maka pilih dan klik tombol Edit), lalu pada bagian Variable value isi path folder JDK seperti langkah sebelumnya dengan tanpa diakhiri folder \bin. Dalam kasus di komputer saya adalah ;C:\Program Files\Java\jdk1.8.0_20. Klik tombol OK.
+6. Klik tombol OK lagi untuk menutup jendela Environment Variable.
+
+Sekarang tes hasil instalasi. Buka jendela terminal atau cmd baru lalu ketik perintah javac -version Kalo muncul nomor versi, itu tandanya JDK sudah siap digunakan.

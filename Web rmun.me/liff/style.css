@@ -1,0 +1,53 @@
+html{
+    font-size: 11px;
+}
+
+body { 
+	background-color:transparent; 
+	margin: 0; 
+	padding: 0;
+}
+
+#imag { 
+    max-width: 25%; 
+    height: auto; 
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.layang {
+	position:fixed;
+	right:5px;
+	top:10px;
+}
+
+button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #538fbe;
+    padding: 10px 20px;
+    font-size: 8px;
+    border: 1px solid #2d6898;
+    background-image: linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
+ 
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(73,132,180)),
+        color-stop(1, rgb(97,155,203))
+    );
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+}
